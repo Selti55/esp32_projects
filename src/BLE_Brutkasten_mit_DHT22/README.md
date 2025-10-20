@@ -15,4 +15,8 @@
 - LED (Heizungsanzeige) an GPIO 2
 - DHT22 an GPIO 4 
   (Vcc=DHT_Pin1; Signal=DHT_Pin2; GND=DHT_Pin2; 10K=DHT_Pin-DHT_Pin2)
+<<<<<<< HEAD
   
+=======
+  
+>>>>>>> d93739b79ff816029b243c04d4b5db07960541e7
