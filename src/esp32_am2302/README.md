@@ -1,12 +1,12 @@
 # Projektname
 
 ## Hardware
-- ESP32 Board: [Typ]
-- Sensoren: [AM2302, etc.]
-- Verkabelung: [Beschreibung]
+- ESP32 Board: 	ESP32 Dev Board
+- Sensoren: 	AM2302
+- Verkabelung: 	siehe Sketch
 
 ## Funktion
-[Was das Projekt macht]
+Test des AM2302 /DHT22)
 
 ## Verwendung
-[Wie man es benutzt]
+war nur ein Funktionstest
