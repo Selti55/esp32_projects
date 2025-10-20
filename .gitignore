@@ -1,6 +1,62 @@
-*.bin
+# Arduino IDE
 *.elf
+*.bin
 *.hex
-*.pyc
-.DS_Store
+*.eep
+*.lst
+*.lss
+*.sym
+*.tmp
+*.core
+
+# In .gitignore hinzufügen um Bibliotheken auszuschließen:
+lib/
+
+# Build Ordner
 build/
+*.prefs
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# System
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Lokale Konfigurationen
+/local/
+/private/
+
+# Kompilierte Bibliotheken
+*.a
+*.la
+*.so
+
+# Logs
+*.log
+
+# Backup Files
+*~
+*.backup
+*.bk
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Betriebssystem spezifisch
+# Windows
+[Tt]humbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# MacOS
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
