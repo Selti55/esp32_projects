@@ -8,6 +8,9 @@ Eine Sammlung meiner ESP32 Projekte entwickelt mit Arduino IDE.
 - `src/esp32_am2302/` - Temperatur- und Feuchtigkeitsmessung mit AM2302/DHT22
 - `src/LILYGO/` - Projekte für LILYGO E-Paper Displays
 - `src/RemoteXY/` - Bluetooth BLE Fernsteuerung mit RemoteXY
+- 'src/Sonnensegel-Wlan/' - erste schritte für das Jürgen - Sonnensegel
+- 'src/Sonnensegel_Wlan_ESP12/' Projekt nicht weiter verfolgt, plan: mit esp32 durchführem
+- 'src/myblitz/' - nur eine Idee
 
 ## 🚀 Schnellstart
 
