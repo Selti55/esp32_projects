@@ -1,0 +1,48 @@
+ESP32 WETTERSTATION - SCHALTPLAN AUSSENSTATION
+=============================================
+
+STROMVERSORGUNG:
+----------------
+Solar Panel 5V/1W
+    ↓
+TP4056 Lademodul (IN+ IN- → Solar | BAT+ BAT- → Akku | OUT+ OUT- → Wandler)
+    ↓  
+18650 Li-Ion Akku (3.7V, 3000mAh) in Halterung
+    ↓
+LM2596 Step-Down Wandler (IN+ IN- → TP4056 OUT | OUT+ OUT- → 3.3V Rail)
+    ↓  
+3.3V VERSORGUNG:
+  → ESP32 3.3V Pin
+  → BME280 VCC
+
+SENSORVERBINDUNGEN:
+-------------------
+ESP32 GPIO21 → BME280 SDA
+ESP32 GPIO22 → BME280 SCL  
+ESP32 GND    → BME280 GND
+
+DEEP SLEEP KONFIGURATION:
+-------------------------
+ESP32 EN Pin → 10kΩ Widerstand → 3.3V
+GPIO0 → Taster → GND (für Boot Mode)
+GPIO2 → LED mit 220Ω → GND (Status LED)
+
+STROMVERBRAUCH:
+---------------
+Deep Sleep: ~10μA
+Active Mode: ~80mA (15 Sekunden alle 15 Minuten)
+Täglicher Verbrauch: ~5mAh
+Akku-Laufzeit: ~600 Tage (theoretisch, 3000mAh)
+
+ABMESSUNGEN GEHÄUSE:
+--------------------
+120mm x 80mm x 60mm
+Wasserdicht IP65
+Belüftungslöcher nach unten
+Solarpanel außen montiert
+
+MONTIERUNG:
+-----------
+- BME280 nicht direkt in Sonneneinstrahlung
+- Belüftung für genaue Temperaturmessung
+- Gehäuse vor direkter Witterung schützen

@@ -1,0 +1,10 @@
+// Für Touch benötigt:
+#include <XPT2046_Touchscreen.h>
+
+Adafruit BME280
+
+TFT_eSPI
+
+Adafruit GFX
+
+text

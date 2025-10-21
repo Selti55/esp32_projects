@@ -1,0 +1,25 @@
+
+## Manuell installieren:
+
+### 1. TFT_eSPI Konfiguration
+Nach Installation in `Arduino/libraries/TFT_eSPI/User_Setup.h`:
+
+```cpp
+#define ESP32_PARALLEL
+#define ILI9488_DRIVER
+
+// Pin definitions for ESP32
+#define TFT_CS   5
+#define TFT_DC   2  
+#define TFT_RST  4
+
+#define TFT_WR   18
+#define TFT_RD   19
+#define TFT_D0   12
+#define TFT_D1   13
+#define TFT_D2   26
+#define TFT_D3   25
+#define TFT_D4   17
+#define TFT_D5   16
+#define TFT_D6   27
+#define TFT_D7   14

@@ -1,0 +1,50 @@
+ESP32 WETTERSTATION - SCHALTPLAN INNENSTATION
+=============================================
+
+STROMVERSORGUNG:
+----------------
+USB Netzteil 5V/2A
+    ↓ Micro USB
+ESP32 Board
+    ↓ 3.3V & 5V Rails
+
+DISPLAY VERBINDUNGEN (SPI):
+---------------------------
+ESP32 GPIO18 → TFT SCK
+ESP32 GPIO23 → TFT MOSI  
+ESP32 GPIO19 → TFT MISO
+ESP32 GPIO5  → TFT CS
+ESP32 GPIO4  → TFT RST
+ESP32 GPIO2  → TFT DC
+ESP32 3.3V   → TFT VCC
+ESP32 GND    → TFT GND
+ESP32 5V     → 100Ω → TFT LED (Backlight)
+
+TOUCH VERBINDUNGEN:
+-------------------
+ESP32 GPIO21 → Touch T_DO
+ESP32 GPIO22 → Touch T_DIN  
+ESP32 GPIO23 → Touch T_CS
+ESP32 GPIO19 → Touch T_CLK
+ESP32 GPIO18 → Touch T_IRQ
+
+DISPLAY SPEZIFIKATIONEN:
+------------------------
+3.5" TFT Touch Display
+Auflösung: 480x320 Pixel
+Controller: ILI9488
+Touch: XPT2046
+SPI Schnittstelle
+
+ANSCHLÜSSE:
+-----------
+USB-C/Micro USB für Strom
+Reset-Taster
+Boot-Taster (GPIO0 → GND)
+
+MONTIERUNG:
+-----------
+- Display zentriert im Gehäuse
+- USB-Anschluss zugänglich
+- Belüftung für Wärmeableitung
+- Standfuß für stabile Position
