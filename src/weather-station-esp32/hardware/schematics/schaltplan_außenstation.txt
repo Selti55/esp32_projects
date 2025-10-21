@@ -1,5 +1,32 @@
 ESP32 WETTERSTATION - SCHALTPLAN AUSSENSTATION
 =============================================
+----
+NEU:
+
+5V Solar Panel (2W)
+        ↓
+TP4056 Lademodul (IN+ IN-)
+        ↓  
+18650 Akku (3.7V) in Halterung
+        ↓
+LM2596 Step-Down (EIN: 3.7V | AUS: 3.3V)
+        ↓
++-----------------+
+| ESP32           |
+| GPIO21 → SDA    |←→ BME280
+| GPIO22 → SCL    |   (3.3V)
+| GPIO2  → LED    |→ 220Ω → GND
+| GPIO0  → Taster |→ GND (Boot)
+| EN     → 10kΩ   |→ 3.3V (Deep Sleep)
++-----------------+
+
+---------
+ALT:
+
+
+
+
+
 
 STROMVERSORGUNG:
 ----------------

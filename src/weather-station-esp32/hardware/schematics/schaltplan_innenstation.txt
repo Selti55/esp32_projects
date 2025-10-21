@@ -1,5 +1,26 @@
 ESP32 WETTERSTATION - SCHALTPLAN INNENSTATION
 =============================================
+----------------------------
+NEU
+USB Power (5V/2A)
+    ↓
++-----------------+
+| ESP32           |
+| GPIO18 → SCK    |←→ TFT Display
+| GPIO23 → MOSI   |   (SPI)
+| GPIO5  → CS     |
+| GPIO4  → RST    |
+| GPIO2  → DC     |
+| GPIO21 → T_DO   |←→ Touch
+| GPIO19 → T_DIN  |   (XPT2046)
+| GPIO22 → T_CS   |
+| GPIO23 → T_CLK  |
++-----------------+
+
+
+--------
+ALT:
+
 
 STROMVERSORGUNG:
 ----------------
